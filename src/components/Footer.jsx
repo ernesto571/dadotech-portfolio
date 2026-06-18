@@ -15,9 +15,9 @@ const contact = [
 ]
 
 const socials = [
-    { label:"IG", to:"https://instagram.com/" },
-    { label:"TK", to:"https://tiktok.com/" },
-    { label:"FB", to:"https://facebook.com/" },
+    { label:"IG", to:"https://instagram.com/dadotech_consultant" },
+    { label:"TK", to:"https://tiktok.com/@dadoraus" },
+    { label:"FB", to:"https://facebook.com/share/18nQ5hncVc/" },
     { label:"WA", to:"https://wa.me/2349023744204" }
 ]
 
@@ -39,7 +39,7 @@ export default function Footer () {
                     <strong className="lemon text-sm tracking-widest ">SERVICES</strong>
                     <div className="flex flex-col gap-2 mt-3">
                         { services.map((s) => (
-                            <a  key={s.label} className="text-[rgba(255,255,255,0.45)] hover:text-white text-[0.8rem] font-inter font-medium" href={s.to}>{s.label} </a>
+                            <a  key={s.label} target="_blank" className="text-[rgba(255,255,255,0.45)] hover:text-white text-[0.8rem] font-inter font-medium" href={s.to}>{s.label} </a>
                         )) }
                     </div>
                 </section>
