@@ -27,7 +27,7 @@
     color: #1a6b2f;
 }
 .lemon {
-    color: #b5e231;
+    color: #b5e321;
 }
 
 .dark {
@@ -42,10 +42,28 @@
     transform: translateY(-1px);
 }
 .bg-lemon {
-    background-color: #b5e231;
+    background-color: #b5e321;
 }
+
 .bg-off {
     background-color: #f6faf0;
+}
+.lemon-bord {
+    border-color: #b5e231;
+}
+.price-feat li::before {
+  content: '✓';
+  color: #1a6b2f;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+
+.price-feat-2 li::before {
+    content: '✓';
+    color: #b5e231;
+    font-weight: 700;
+    flex-shrink: 0;
 }
 
 @keyframes heroFloat {

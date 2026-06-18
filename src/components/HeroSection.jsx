@@ -53,7 +53,7 @@ export default function HeroSection() {
                         POWER YOUR
                         <h1 className='green'>WORLD WITH US.</h1>
                     </div>
-                    <p className='font-grotesque text-[0.9rem] leading-6 lg:text-base gray mt-3 lg:w-[80%] font-medium'>Dadotech Consultant delivers certified Solar, HVAC, and Electrical solutions for homes and businesses across Nigeria. Reliable. Professional. Ready.</p>
+                    <p className='font-grotesque text-[0.9rem] leading-6 lg:text-base gray mt-3 md:w-[60%] lg:w-[80%] font-medium'>Dadotech Consultant delivers certified Solar, HVAC, and Electrical solutions for homes and businesses across Nigeria. Reliable. Professional. Ready.</p>
 
                     {/* hero btn */}
                     <span className=' grid md:flex text-center gap-4 mt-8'>

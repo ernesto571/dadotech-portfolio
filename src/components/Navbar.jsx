@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { navLinks } from "../utils";
+import { Menu } from "lucide-react";
+import MenuSidebar from "./MenuSidebar";
 
 function Navbar() {
     const [scrolled, setScrolled] = useState(false);
+    const [sidebarOpen, setSidebarOpen] = useState(false);
 
     useEffect(() => {
         const onScroll = () => {
@@ -14,7 +17,7 @@ function Navbar() {
 
     return (
         <nav className={`fixed py-2 top-0 left-0 w-full z-50 transition-all duration-300
-            ${scrolled ? "backdrop-blur shadow-lg bg-white" : " bg-inherit"}
+            ${scrolled ? "backdrop-blur shadow-2xl bg-white" : " bg-inherit"}
         `}>
             <section className="flex justify-between items-center w-[95%] mx-auto font-grotesk gray">
                 <img src="https://res.cloudinary.com/dsljbxkfy/image/upload/v1781292406/dadotech-logo-removebg-preview_quj6wq.png" alt="dadotech logo" className="w-[100px] h-[30px] lg:w-[200px] "/>
@@ -27,7 +30,12 @@ function Navbar() {
                         <a key={n.id} href={n.to} className="text-[0.9rem] font-semibold text-white px-[20px] py-[9px] bg-green hover:cursor-pointer ease-in-out ">{n.label} </a>
                     )) }
                 </div>
+
+                <button type="button"  onClick={() => setSidebarOpen(!sidebarOpen)} className="lg:hidden">
+                    <Menu className="size-6 green" /> 
+                </button>
             </section>
+            <MenuSidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
             
         </nav>
     );
