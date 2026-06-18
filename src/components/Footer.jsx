@@ -39,7 +39,7 @@ export default function Footer () {
                     <strong className="lemon text-sm tracking-widest ">SERVICES</strong>
                     <div className="flex flex-col gap-2 mt-3">
                         { services.map((s) => (
-                            <a  key={s.label} target="_blank" className="text-[rgba(255,255,255,0.45)] hover:text-white text-[0.8rem] font-inter font-medium" href={s.to}>{s.label} </a>
+                            <a  key={s.label} className="text-[rgba(255,255,255,0.45)] hover:text-white text-[0.8rem] font-inter font-medium" href={s.to}>{s.label} </a>
                         )) }
                     </div>
                 </section>
@@ -57,7 +57,7 @@ export default function Footer () {
                 <p className="gray text-xs font-inter font-medium">© 2026 Dadotech Consultant Solar-HVAC Company Ltd. All rights reserved.</p>
                 <span className="flex gap-3">
                     { socials.map((s) => (
-                        <a href={s.to} key={s.label} className="text-[rgba(255,255,255,0.45)] hover:text-[#b5e321] border border-[rgba(255,255,255,0.08)] hover:border-[#b5e321] py-1 px-2  text-[0.8rem] font-inter font-medium ">{s.label} </a>
+                        <a href={s.to}  target="_blank" key={s.label} className="text-[rgba(255,255,255,0.45)] hover:text-[#b5e321] border border-[rgba(255,255,255,0.08)] hover:border-[#b5e321] py-1 px-2  text-[0.8rem] font-inter font-medium ">{s.label} </a>
                     )) }
                 </span>
             </div>
