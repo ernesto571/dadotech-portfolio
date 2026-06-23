@@ -60,7 +60,7 @@ export default function HeroSection() {
       />
       <div className="hero-overlay" />
 
-      <div className="absolute w-[82%] mx-auto gap-3 grid items-center grid-cols-1 lg:grid-cols-2 inset-0">
+      <div className="absolute w-[85%] mx-auto gap-3 grid items-center grid-cols-1 lg:grid-cols-2 inset-0">
         <section className="mt-3 md:mt-0">
           {/* eyebrow */}
           <span
